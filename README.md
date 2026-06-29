@@ -30,13 +30,15 @@ The framework is suitable for:
 ## 🏗️ Framework Architecture
 
 The project follows the Page Object Model (POM) design pattern:
+```cpp
 SeleniumCSharpFramework/
 │
-├── Base/ # Base test setup and teardown
-├── Drivers/ # WebDriver initialization
-├── Pages/ # Page Object classes
-├── Tests/ # Test cases
-├── Utilities/ # Helper methods (waits, configs, etc.)
-├── TestData/ # Test data files (JSON, etc.)
-├── Reports/ # Generated test reports
-└── Config/ # Configuration settings
+├── Base/         # Test setup, teardown, hooks
+├── Drivers/      # WebDriver initialization & browser factory
+├── Pages/        # Page Object classes (UI interactions)
+├── Tests/        # NUnit test cases
+├── Utilities/    # Waits, helpers, extensions, config readers
+├── TestData/     # External test data (JSON, CSV, etc.)
+├── Reports/      # ExtentReports output
+└── Config/       # Browser, URLs, environment settings
+```
